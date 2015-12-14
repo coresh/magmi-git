@@ -272,9 +272,7 @@ abstract class Magmi_Engine extends DbHelper
         }
         if (is_array($this->_activeplugins) && isset($this->_activeplugins[$family]) && isset($this->_activeplugins[$family][$order]))
             return $this->_activeplugins[$family][$order];
-
-        return $this->_activeplugins[$family][$order];
-    }
+    q}
 
     /*
      * Plugin call generic callback for engine @param $types : plugin types to call @param $callback : processing step to call @param $data : (reference) , data to pass to plugin processing @param $params : extra parameters for processing step @param $break : flag to stop calling chain at first plugin returning false (defaults to true)
